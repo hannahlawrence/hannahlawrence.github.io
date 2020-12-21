@@ -26,18 +26,18 @@
               <p>
                 Note: this page is under construction.
               </p> -->
-              <p>I am a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I work on developing new fundamental algorithms at the interface of signal processing and deep learning, with the ultimate goal of cryoEM image reconstruction. Broadly, I enjoy working on mathematical algorithms for data science. 
+              <p>I am a first-year PhD student in computer science at MIT, studying machine learning theory. Previously, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of signal processing and deep learning, with the ultimate goal of cryoEM image reconstruction. Broadly, I enjoy working on mathematical algorithms for data science. 
               </p>
               <p>
-                I spent the last summer at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">Microsoft Research</a>, where I was lucky to be mentored by <a href=
+                I spent summer 2019 at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">Microsoft Research</a>, where I was lucky to be mentored by <a href=
                 "https://people.cs.umass.edu/~cmusco/">Cameron Musco</a> (now at <a href="https://www.umass.edu/">Amherst</a>). I've also spent productive summers at <a href="https://www.reservoir.com/">Reservoir Labs</a> and the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a>. I was an undergrad at Yale in applied math and computer science, where I had the extremely good fortune of being advised by <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a> and <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a>.
                 
               </p>
               <p style="text-align:center">
-                <a href="mailto:hlawrence@flatironinstitute.org">Email</a> &nbsp/&nbsp
+                <a href="mailto:hanlaw@mit.edu">Email</a> &nbsp/&nbsp
                 <a href="https://github.com/hannahlawrence/">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/hannah-lawrence-417b5a130/"> LinkedIn </a> &nbsp/&nbsp
-                <a href="data/CVFall2019_forwebsite.pdf"> CV </a>
+                <a href="data/CVFall2020_forwebsite.pdf"> CV </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -50,16 +50,29 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests include sparse recovery, theoretical machine learning, signal processing, numerical linear algebra, and spectral graph theory, and especially the applications in which some subset of these paradigms intersect. I like developing provably robust, efficient algorithms for inverse problems, sometimes in imaging applications.
+                My research interests include theoretical machine learning, signal processing, sparse recovery, and numerical linear algebra, and especially the applications in which some subset of these paradigms intersect. I like developing provably robust, efficient algorithms for inverse problems, sometimes in imaging applications.
                 <br />
                 <br />
                 Here are a few questions I've been thinking about recently:
 
                 <ul>
-                  <li> <i> What invariances should a message-passing neural net for multireference alignment obey? </i> </li>
+                  <li> <i> Is there a clear theoretical justification for the empirical success of equivariance as an inductive prior in neural architectures? What's the right way to formulate this? </i> </li>
+                  
+                  <li> <i> Given data, can one learn an underlying dictionary if the corresponding coefficients are not sparse, but rather come from a known generative model? </i> </li>
+
+                  <li> <i> When does equivariance with respect to the wreath product group arise in deep learning applications? </i> </li>
+
+                  <li> <i> Is it possible to characterize the class of generative models under which Fourier phase retrieval is well-conditioned? </i> </li>
+
+                  <!--
+                  <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
+                  <li>How much hot chocolate can I consume at a single research institution? </li> -->
+                </ul>
+
+                And here are some older questions, not forgotten but on the back burner:
+                <ul>
                   <li> <i> What's the fastest way to rotationally align two spherical functions? </i> </li>
                   <li> <i> What generalizations of (1) the restricted isometry property and (2) leverage score sampling might be useful for off-grid sparse recovery? </i></li>
-                  <li> <i> What practical considerations determine the real-world utility of switching-constrained online optimization algorithms? </i></li>
                   <!--
                   <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
                   <li>How much hot chocolate can I consume at a single research institution? </li> -->
@@ -72,6 +85,41 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="online_stop()" onmouseover="online_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='phase_image'><img src='images/phase_after.jpg'></div>
+                <img src='images/phase_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function online_start() {
+                  document.getElementById('phase_image').style.opacity = "1";
+                }
+                function online_stop() {
+                  document.getElementById('phase_image').style.opacity = "0";
+                }
+                online_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/1910.10873">
+                <papertitle>Phase Retrieval with Holography and Untrained Priors: Tackling the Challenges of Low-Photon Nanoscale Imaging</papertitle>
+              </a>
+              <br>
+              <strong>Hannah Lawrence <sup>*</sup> </strong>,
+              <a href="https://davidbar.org/">David A. Barmherzig <sup>*</sup></a>,
+              <a href="https://math.yale.edu/people/henry-li">Henry Li</a>,
+              <a href="https://eickenberg.github.io/">Michael Eickenberg</a>,
+              <a href="https://marylou-gabrie.github.io/">Marylou Gabrié</a>
+              <br>
+               <em>Under review</em>, 2020
+              <br>
+              <p></p>
+              <p>By using a maximum-likelihood objective coupled with a deep decoder prior for images, we achieve superior image reconstruction for holographic phase retrieval, including under several challenging realistic conditions. To our knowledge, this is the first dataset-free machine learning approach for holographic phase retrieval. </p>
+            </td>
+          </tr>
+        </tbody></table>
 
           <tr onmouseout="online_stop()" onmouseover="online_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -99,7 +147,7 @@
               <strong>Hannah Lawrence</strong>,
               <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a>
               <br>
-              <!-- <em>In submission</em>, 2019 -->
+               <em>Appearing at NeurIPS</em>, 2020
               <br>
               <p></p>
               <p>We establish the minimax regret of switching-constrained online convex optimization, a realistic optimization framework where algorithms must act in real-time to minimize cumulative loss, but are penalized if they are too erratic.</p>
@@ -136,7 +184,7 @@
               <a href="https://people.cs.umass.edu/~cmusco/">Cameron Musco</a>,
               <a href="https://www.chrismusco.com/">Christopher Musco</a>
               <br>
-              <!-- <em>In submission</em>, 2019 -->
+               <em>Appeared at ICASSP</em>, 2020
               <br>
               <p></p>
               <p>By building new, randomized "ruler" sampling constructions, we show how to use sublinear sparse Fourier transform algorithms for sample efficient, low-rank, Toeplitz covariance estimation.</p>
@@ -155,6 +203,9 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/YaleUniversityLogo.jpg"></td>
             <td width="75%" valign="center">
+              Women in Learning Theory Mentor, Spring 2020
+              <br>
+              <br>
               Applied Math Departmental Student Advisory Committee, Spring 2019
               <br>
               <br>
