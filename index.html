@@ -26,18 +26,19 @@
               <p>
                 Note: this page is under construction.
               </p> -->
-              <p>I am a first-year PhD student in computer science at MIT, studying machine learning theory. Previously, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of signal processing and deep learning, with the ultimate goal of cryoEM image reconstruction. Broadly, I enjoy working on mathematical algorithms for data science. 
+              <p>I am a second-year PhD student in machine learning theory at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. Previously, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of signal processing and deep learning, with the ultimate goal of cryoEM image reconstruction. Broadly, I enjoy working on mathematical algorithms for data science. 
               </p>
               <p>
                 I spent summer 2019 at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">Microsoft Research</a>, where I was lucky to be mentored by <a href=
-                "https://people.cs.umass.edu/~cmusco/">Cameron Musco</a> (now at <a href="https://www.umass.edu/">Amherst</a>). I've also spent productive summers at <a href="https://www.reservoir.com/">Reservoir Labs</a> and the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a>. I was an undergrad at Yale in applied math and computer science, where I had the extremely good fortune of being advised by <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a> and <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a>.
+                "https://people.cs.umass.edu/~cmusco/">Cameron Musco</a> (now at <a href="https://www.umass.edu/">Amherst</a>). I've also spent productive summers at <a href="https://www.reservoir.com/">Reservoir Labs</a> and the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a>. I was an undergrad at Yale in applied math and computer science, where I had the good fortune of being advised by <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a> and <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a>.
                 
               </p>
               <p style="text-align:center">
                 <a href="mailto:hanlaw@mit.edu">Email</a> &nbsp/&nbsp
                 <a href="https://github.com/hannahlawrence/">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/hannah-lawrence-417b5a130/"> LinkedIn </a> &nbsp/&nbsp
-                <a href="data/CVFall2020_forwebsite.pdf"> CV </a>
+                <!-- <a href="data/CVFall2020_forwebsite.pdf"> CV </a> &nbsp/&nbsp -->
+                <a href="https://twitter.com/HLawrenceCS"> Twitter </a> &nbsp/&nbsp
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -56,21 +57,23 @@
                 Here are a few questions I've been thinking about recently:
 
                 <ul>
+                  <li> <i> Are there efficient universal approximation for certain subclasses of equivariant functions? </i> </li>
+                  <li> <i> How can we automatically identify and interpret coherent patterns of errors made by a trained model? </i> </li>
+                  <li> <i> Are there efficient methods for (1) enforcing equivariance w.r.t large groups (given access to a uniform sampler) on linear/kernel learning? (2) enforcing approximate equivariance? </i> </li>
                   <li> <i> Is there a clear theoretical justification for the empirical success of equivariance as an inductive prior in neural architectures? What's the right way to formulate this? </i> </li>
-                  
-                  <li> <i> Given data, can one learn an underlying dictionary if the corresponding coefficients are not sparse, but rather come from a known generative model? </i> </li>
-
-                  <li> <i> When does equivariance with respect to the wreath product group arise in deep learning applications? </i> </li>
-
-                  <li> <i> Is it possible to characterize the class of generative models under which Fourier phase retrieval is well-conditioned? </i> </li>
 
                   <!--
                   <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
                   <li>How much hot chocolate can I consume at a single research institution? </li> -->
                 </ul>
 
-                And here are some older questions, not forgotten but on the back burner:
+                And here are some older questions, on the back burner:
                 <ul>
+                  <li> <i> Given data, can one learn an underlying dictionary if the corresponding coefficients are not sparse, but rather come from a known generative model? </i> </li>
+
+                  <li> <i> When does equivariance with respect to the wreath product group arise in deep learning applications? </i> </li>
+
+                  <li> <i> Is it possible to characterize the class of generative models under which Fourier phase retrieval is well-conditioned? </i> </li>
                   <li> <i> What's the fastest way to rotationally align two spherical functions? </i> </li>
                   <li> <i> What generalizations of (1) the restricted isometry property and (2) leverage score sampling might be useful for off-grid sparse recovery? </i></li>
                   <!--
@@ -81,6 +84,41 @@
               </p>
             </td>
           </tr>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="online_stop()" onmouseover="online_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='online_image'><img src='images/web_bias_lower.pdf'></div>
+                  <img src='images/web_bias_upper.pdf'>
+                </div>
+                <script type="text/javascript">
+                  function online_start() {
+                    document.getElementById('online_image').style.opacity = "1";
+                  }
+                  function online_stop() {
+                    document.getElementById('online_image').style.opacity = "0";
+                  }
+                  online_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2110.06084.pdf">
+                  <papertitle>Implicit Bias of Linear Equivariant Networks</papertitle>
+                </a>
+                <br>
+                <strong>Hannah Lawrence</strong>,
+                <a href="https://kristian-georgiev.github.io/">Kristian Georgiev</a>,
+                <a href="https://www.linkedin.com/in/andrew-dienes-83981914a">Andrew Dienes</a>,
+                <a href="https://scholar.google.com/citations?user=fz1mq4AAAAAJ&hl=en">Bobak T. Kiani<sup>*</sup></a>
+                <br>
+                 <em>Appearing at ICML</em>, 2022 
+                <br>
+                <p></p>
+                <p>We characterize the implicit bias of linear group-convolutional networks trained by gradient descent. In particular, we show that the learned linear function is biased towards low-rank matrices in Fourier space.</p>
+              </td>
+            </tr>
+          </tbody></table>
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -101,7 +139,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1910.10873">
+              <a href="https://arxiv.org/pdf/2012.07386">
                 <papertitle>Phase Retrieval with Holography and Untrained Priors: Tackling the Challenges of Low-Photon Nanoscale Imaging</papertitle>
               </a>
               <br>
@@ -146,7 +184,7 @@
               <strong>Hannah Lawrence</strong>,
               <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a>
               <br>
-               <em>Appearing at NeurIPS</em>, 2020
+               <em>Appeared at NeurIPS</em>, 2020
               <br>
               <p></p>
               <p>We establish the minimax regret of switching-constrained online convex optimization, a realistic optimization framework where algorithms must act in real-time to minimize cumulative loss, but are penalized if they are too erratic.</p>
@@ -202,6 +240,9 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/YaleUniversityLogo.jpg"></td>
             <td width="75%" valign="center">
+              Hertz Foundation Summer Workshop Committee, Fall 2021 and Spring 2022
+              <br>
+              <br>
               Women in Learning Theory Mentor, Spring 2020
               <br>
               <br>
