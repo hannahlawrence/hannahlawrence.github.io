@@ -89,6 +89,41 @@
             <tr onmouseout="online_stop()" onmouseover="online_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
+                  <div class="two" id='cauli_image'><img src='images/svm_diag.png'></div>
+                  <img src='images/svm_diag.png'>
+                </div>
+                <script type="text/javascript">
+                  function online_start() {
+                    document.getElementById('cauli_image').style.opacity = "1";
+                  }
+                  function online_stop() {
+                    document.getElementById('cauli_image').style.opacity = "0";
+                  }
+                  online_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2206.14754.pdf">
+                  <papertitle>Distilling Model Failures as Directions in Latent Space</papertitle>
+                </a>
+                <br>
+                <a href="http://people.csail.mit.edu/saachij/">Saachi Jain<sup>*</sup></a>,
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>,
+                <a href="https://madry.mit.edu/">Aleksander Madry</a>
+                <br>
+                 <em>In submission</em>, 2022 
+                <br>
+                <p></p>
+                <p>We present a framework for automatically identifying and captioning coherent patterns of errors made by any trained model. The key? Keeping it simple: linear classifiers in a shared vision-language embedding space.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="online_stop()" onmouseover="online_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
                   <div class="two" id='online_image'><img src='images/web_bias_lower.jpg'></div>
                   <img src='images/web_bias_upper.jpg'>
                 </div>
@@ -149,7 +184,7 @@
               <a href="https://eickenberg.github.io/">Michael Eickenberg</a>,
               <a href="https://marylou-gabrie.github.io/">Marylou Gabrié</a>
               <br>
-               <em>Under review</em>, 2020
+               <em>Appeared at MSML</em>, 2021
               <br>
               <p></p>
               <p>By using a maximum-likelihood objective coupled with a deep decoder prior for images, we achieve superior image reconstruction for holographic phase retrieval, including under several challenging realistic conditions. To our knowledge, this is the first dataset-free machine learning approach for holographic phase retrieval. </p>
