@@ -192,8 +192,8 @@
             <tr onmouseout="distill_stop()" onmouseover="distill_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='distill_image'><img src='images/svm_diag.png'></div>
-                  <img src='images/svm_diag.png'>
+                  <div class="two" id='distill_image'><img src='images/with_svm.jpg'></div>
+                  <img src='images/without_svm.jpg'>
                 </div>
                 <script type="text/javascript">
                   function distill_start() {
@@ -227,15 +227,15 @@
             <tr onmouseout="bias_stop()" onmouseover="bias_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='online_image'><img src='images/web_bias_lower.jpg'></div>
+                  <div class="two" id='bias_image'><img src='images/web_bias_lower.jpg'></div>
                   <img src='images/web_bias_upper.jpg'>
                 </div>
                 <script type="text/javascript">
                   function bias_start() {
-                    document.getElementById('online_image').style.opacity = "1";
+                    document.getElementById('bias_image').style.opacity = "1";
                   }
                   function bias_stop() {
-                    document.getElementById('online_image').style.opacity = "0";
+                    document.getElementById('bias_image').style.opacity = "0";
                   }
                   bias_stop()
                 </script>
