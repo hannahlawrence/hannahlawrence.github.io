@@ -26,11 +26,11 @@
               <p>
                 Note: this page is under construction.
               </p> -->
-              <p>I am a second-year PhD student in machine learning theory at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. Previously, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of signal processing and deep learning for cryoEM. Broadly, I enjoy working on mathematical algorithms for data science and equivariant learning. 
+              <p>I am a third-year PhD student in machine learning at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. Previously, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of equivariant deep learning and signal processing for <a href="https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy">cryoEM</a>. Broadly, I enjoy developing theoretically principled tools for deep learning (often in imaging and vision domains), with a focus on learning under known symmetries.
               </p>
               <p>
                 I spent summer 2019 at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">Microsoft Research</a>, where I was lucky to be mentored by <a href=
-                "https://people.cs.umass.edu/~cmusco/">Cameron Musco</a> (now at <a href="https://www.umass.edu/">Amherst</a>). I've also spent productive summers at <a href="https://www.reservoir.com/">Reservoir Labs</a> and the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a>. I was an undergrad at Yale in applied math and computer science, where I had the good fortune of being advised by <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a> and <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a>.
+                "https://people.cs.umass.edu/~cmusco/">Cameron Musco</a>. I've also spent productive summers at <a href="https://www.reservoir.com/">Reservoir Labs</a> and the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a>. I was an undergrad at Yale in applied math and computer science, where I had the good fortune of being advised by <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a> and <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a>.
                 
               </p>
               <p style="text-align:center">
@@ -51,32 +51,48 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests include symmetry-aware machine learning, signal processing, sparse recovery, and numerical linear algebra, and especially the applications in which some subset of these paradigms intersect. I like developing provably robust, efficient algorithms for inverse problems, sometimes in imaging applications.
+                My primary research interests include symmetry-aware (equivariant) machine learning, sparse recovery, and scientific imaging/inverse problems, and especially applications in which these paradigms intersect. I like developing theoretically principled tools for deep learning, for applications from vision to interpretability to PDEs. 
                 <br />
                 <br />
-                Here are a few questions I've been thinking about recently:
+                Here are a few high-level questions I've been thinking about recently:
 
                 <ul>
-                  <li> <i> Are there efficient universal approximation for certain subclasses of equivariant functions? </i> </li>
-                  <li> <i> How can we automatically identify and interpret coherent patterns of errors made by a trained model? </i> </li>
-                  <li> <i> Are there efficient methods for (1) enforcing equivariance w.r.t large groups (given access to a uniform sampler) on linear/kernel learning? (2) enforcing approximate equivariance? </i> </li>
-                  <li> <i> Is there a clear theoretical justification for the empirical success of equivariance as an inductive prior in neural architectures? What's the right way to formulate this? </i> </li>
+                  
+                  <li> <i> What kinds of approximate symmetries arise in practice, e.g. in scientific applications? How should this structure inform our choice of architecture, and when is approximate symmetry still a powerful enough inductive bias to benefit learning? </i> </li>
+
+                  
+                  <li> <i> How can we harness equivariance to learn useful representations, especially in applications with complicated symmetries (such as PDEs)? </i> </li>
+
+                  <li> <i> How can we enforce equivariance to non-compact groups, like the special linear group?  </i> </li>
+
+                  
+
+                  <li> <i> Does equivariance have a role to play in NLP? In fairness? </i> </li>
 
                   <!--
                   <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
                   <li>How much hot chocolate can I consume at a single research institution? </li> -->
                 </ul>
 
-                And here are some older questions, on the back burner:
+                And here are some older questions:
                 <ul>
+                  <li> <i> Are there efficient methods for (1) enforcing equivariance w.r.t large groups (given access to a uniform sampler) on linear/kernel learning? (2) enforcing approximate equivariance? </i> </li>
+
+                  <li> <i> Are there efficient universal approximation for certain subclasses of equivariant functions? What is the right way of measuring the "smoothness" of an equivariant function? </i> </li>
+
+                  <li> <i> Is there a clear theoretical justification for the empirical success of equivariance as an inductive prior in neural architectures? What's the right framework for formulating this? </i> </li>
+
+
+                  <!--
                   <li> <i> Given data, can one learn an underlying dictionary if the corresponding coefficients are not sparse, but rather come from a known generative model? </i> </li>
 
                   <li> <i> When does equivariance with respect to the wreath product group arise in deep learning applications? </i> </li>
 
+                  
                   <li> <i> Is it possible to characterize the class of generative models under which Fourier phase retrieval is well-conditioned? </i> </li>
                   <li> <i> What's the fastest way to rotationally align two spherical functions? </i> </li>
                   <li> <i> What generalizations of (1) the restricted isometry property and (2) leverage score sampling might be useful for off-grid sparse recovery? </i></li>
-                  <!--
+                  
                   <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
                   <li>How much hot chocolate can I consume at a single research institution? </li> -->
                 </ul>
@@ -215,7 +231,7 @@
                 <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>,
                 <a href="https://madry.mit.edu/">Aleksander Madry</a>
                 <br>
-                 <em>In submission</em>, 2022 
+                 <em>In submission</em>, 2022. See also the <a href="https://gradientscience.org/failure-directions/">blog post</a>
                 <br>
                 <p></p>
                 <p>We present a framework for automatically identifying and captioning coherent patterns of errors made by any trained model. The key? Keeping it simple: linear classifiers in a shared vision-language embedding space.</p>
