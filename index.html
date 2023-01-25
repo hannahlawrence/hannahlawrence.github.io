@@ -102,6 +102,41 @@
           </tr>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="distill_stop()" onmouseover="distill_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='distill_image'><img src='images/with_svm.jpg'></div>
+                  <img src='images/without_svm.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function distill_start() {
+                    document.getElementById('distill_image').style.opacity = "1";
+                  }
+                  function distill_stop() {
+                    document.getElementById('distill_image').style.opacity = "0";
+                  }
+                  distill_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2206.14754.pdf">
+                  <papertitle>Distilling Model Failures as Directions in Latent Space</papertitle>
+                </a>
+                <br>
+                <a href="http://people.csail.mit.edu/saachij/">Saachi Jain<sup>*</sup></a>,
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>,
+                <a href="https://madry.mit.edu/">Aleksander Madry</a>
+                <br>
+                 <em>ICLR (spotlight presentation)</em>, 2023. See also the <a href="https://gradientscience.org/failure-directions/">blog post</a>
+                <br>
+                <p></p>
+                <p>We present a framework for automatically identifying and captioning coherent patterns of errors made by any trained model. The key? Keeping it simple: linear classifiers in a shared vision-language embedding space.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="gulp_stop()" onmouseover="gulp_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -204,40 +239,7 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="distill_stop()" onmouseover="distill_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='distill_image'><img src='images/with_svm.jpg'></div>
-                  <img src='images/without_svm.jpg'>
-                </div>
-                <script type="text/javascript">
-                  function distill_start() {
-                    document.getElementById('distill_image').style.opacity = "1";
-                  }
-                  function distill_stop() {
-                    document.getElementById('distill_image').style.opacity = "0";
-                  }
-                  distill_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/pdf/2206.14754.pdf">
-                  <papertitle>Distilling Model Failures as Directions in Latent Space</papertitle>
-                </a>
-                <br>
-                <a href="http://people.csail.mit.edu/saachij/">Saachi Jain<sup>*</sup></a>,
-                <strong>Hannah Lawrence<sup>*</sup></strong>,
-                <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>,
-                <a href="https://madry.mit.edu/">Aleksander Madry</a>
-                <br>
-                 <em>ICLR (spotlight presentation)</em>, 2023. See also the <a href="https://gradientscience.org/failure-directions/">blog post</a>
-                <br>
-                <p></p>
-                <p>We present a framework for automatically identifying and captioning coherent patterns of errors made by any trained model. The key? Keeping it simple: linear classifiers in a shared vision-language embedding space.</p>
-              </td>
-            </tr>
-          </tbody></table>
+          
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="bias_stop()" onmouseover="bias_start()">
