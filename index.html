@@ -26,7 +26,9 @@
               <p>
                 Note: this page is under construction.
               </p> -->
-              <p>I am a third-year PhD student in machine learning at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. Previously, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of equivariant deep learning and signal processing for <a href="https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy">cryoEM</a>. Broadly, I enjoy developing theoretically principled tools for deep learning (often in imaging and vision domains), with a focus on learning under known symmetries.
+              <p>I am a PhD student in machine learning at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. I am also a member of the wonderful <a href="https://atomicarchitects.github.io/">Atomic Architects</a>, led by Tess Smidt. Previously, I was a summer research intern at the Open Catalyst Team at Meta FAIR, studying equivariance for chemistry applications.
+                
+              Before graduate school, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of equivariant deep learning and signal processing for <a href="https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy">cryoEM</a>. Broadly, I enjoy developing theoretically principled tools for deep learning (often in scientific or image domains), with a focus on learning with symmetries.
               </p>
               <p>
                 I spent summer 2019 at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">Microsoft Research</a>, where I was lucky to be mentored by <a href=
@@ -38,7 +40,8 @@
                 <a href="https://github.com/hannahlawrence/">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/hannah-lawrence-417b5a130/"> LinkedIn </a> &nbsp/&nbsp
                 <!-- <a href="data/CVFall2020_forwebsite.pdf"> CV </a> &nbsp/&nbsp -->
-                <a href="https://twitter.com/HLawrenceCS"> Twitter </a> &nbsp&nbsp
+                <a href="https://twitter.com/HLawrenceCS"> Twitter </a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=tYE9bLoAAAAJ&hl=en"> Google Scholar </a> &nbsp&nbsp
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -51,10 +54,10 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My primary research interests include symmetry-aware (equivariant) machine learning, sparse recovery, and scientific imaging/inverse problems, and especially applications in which these paradigms intersect. I like developing theoretically principled tools for deep learning, for applications from vision to interpretability to PDEs. 
+                My primary research interests include symmetry-aware (equivariant) machine learning and scientific applications. <!--  sparse recovery, and scientific imaging/inverse problems, and especially applications in which these paradigms intersect. -->In addition, I enjoy developing theoretically principled tools for deep learning, for applications from vision to interpretability to PDEs. 
                 <br />
                 <br />
-                Here are a few high-level questions I've been thinking about recently:
+                Here is a non-exhaustive list of a few high-level questions I've been thinking about recently (or at least, the last time I updated this website):
 
                 <ul>
                   
@@ -63,8 +66,9 @@
                   
                   <li> <i> How can we harness equivariance to learn useful representations, especially in applications with complicated symmetries (such as PDEs)? </i> </li>
 
-                  <li> <i> How can we enforce equivariance to non-compact groups, like the special linear group?  </i> </li>
+                  <!-- <li> <i> How can we enforce equivariance to non-compact groups, like the special linear group?  </i> </li> -->
 
+                  <li> <i> How can we make canonicalization work, in theory and in practice, as an approach for enforcing symmetries? </i> </li>
                   
 
                   <li> <i> Does equivariance have a role to play in NLP? In fairness? </i> </li>
@@ -74,7 +78,7 @@
                   <li>How much hot chocolate can I consume at a single research institution? </li> -->
                 </ul>
 
-                And here are some older questions:
+                <!-- And here are some older questions:
                 <ul>
                   <li> <i> Are there efficient methods for (1) enforcing equivariance w.r.t large groups (given access to a uniform sampler) on linear/kernel learning? (2) enforcing approximate equivariance? </i> </li>
 
@@ -83,7 +87,11 @@
                   <li> <i> Is there a clear theoretical justification for the empirical success of equivariance as an inductive prior in neural architectures? What's the right framework for formulating this? </i> </li>
 
 
-                  <!--
+
+
+
+
+                  
                   <li> <i> Given data, can one learn an underlying dictionary if the corresponding coefficients are not sparse, but rather come from a known generative model? </i> </li>
 
                   <li> <i> When does equivariance with respect to the wreath product group arise in deep learning applications? </i> </li>
@@ -94,12 +102,125 @@
                   <li> <i> What generalizations of (1) the restricted isometry property and (2) leverage score sampling might be useful for off-grid sparse recovery? </i></li>
                   
                   <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
-                  <li>How much hot chocolate can I consume at a single research institution? </li> -->
-                </ul>
+                  <li>How much hot chocolate can I consume at a single research institution? </li> 
+                </ul> -->
 
               </p>
             </td>
           </tr>
+
+          <!-- # SL2 -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="sl2_stop()" onmouseover="sl2_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ssl_image'><img src='images/white_square.jpg'></div>
+                  <img src='images/white_square.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function sl2_start() {
+                    document.getElementById('ssl_image').style.opacity = "1";
+                  }
+                  function sl2_stop() {
+                    document.getElementById('ssl_image').style.opacity = "0";
+                  }
+                  sl2_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2312.02146.pdf">
+                  <papertitle>Learning Polynomial Problems with SL(2,R) Equivariance</papertitle>
+                </a>
+                <br>
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://harris-mit.github.io/">Mitchell Harris<sup>*</sup></a>
+                <br>
+                <em>Under review</em>, 2023. 
+                <br>
+                <p></p>
+                <p>We propose machine learning approaches, which are equivariant with respect to the non-compact group of area-preserving transformations SL(2,R), for learning to solve polynomial optimization problems.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="ssl_stop()" onmouseover="ssl_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ssl_image'><img src='images/white_square.jpg'></div>
+                  <img src='images/white_square.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function ssl_start() {
+                    document.getElementById('ssl_image').style.opacity = "1";
+                  }
+                  function ssl_stop() {
+                    document.getElementById('ssl_image').style.opacity = "0";
+                  }
+                  ssl_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2307.05432.pdf">
+                  <papertitle>Self-Supervised Learning with Lie Symmetries for Partial Differential Equations</papertitle>
+                </a>
+                <br>
+                <a href="https://gregoiremialon.github.io/">Grégoire Mialon<sup>*</sup></a>,
+                <a href="https://garridoq.com/">Quentin Garrido<sup>*</sup></a>,
+                <strong>Hannah Lawrence</strong>,
+                <a href="https://scholar.google.ca/citations?user=XdyK1qoAAAAJ&hl=en">Danyal Rehman</a>,
+                <a href="https://bkiani.github.io/">Bobak Kiani</a>
+                <br>
+                <em>ICLR</em>, 2023. 
+                <br>
+                <p></p>
+                <p>We apply self-supervised learning to partial differential equations, using the equations' Lie point symmetries as augmentations.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="ssl_stop()" onmouseover="ssl_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ssl_image'><img src='images/white_square.jpg'></div>
+                  <img src='images/white_square.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function ssl_start() {
+                    document.getElementById('ssl_image').style.opacity = "1";
+                  }
+                  function ssl_stop() {
+                    document.getElementById('ssl_image').style.opacity = "0";
+                  }
+                  ssl_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2307.08423.pdf">
+                  <papertitle>Artificial Intelligence for Science in
+                    Quantum, Atomistic, and Continuum
+                    Systems</papertitle>
+                </a>
+                <br>
+                <a href="https://scholar.google.com/citations?user=DrsDZg4AAAAJ&hl=en">Xuan Zhang<sup>*</sup></a>,
+                <a href="https://people.tamu.edu/~limei/">Limei Wang<sup>*</sup></a>,
+                <a href="https://scholar.google.com/citations?user=NtqpyUAAAAAJ&hl=en">Jacob Helwig<sup>*</sup></a>,
+                <a href="https://people.tamu.edu/~yzluo/">Youzhi Luo<sup>*</sup></a>,
+                <a href="https://congfu.github.io/">Cong Fu<sup>*</sup></a>,
+                <a href="https://www.linkedin.com/in/yaochen-xie-44602994/?locale=en_US">Yaochen Xie<sup>*</sup></a>,
+                ...,
+                <strong>Hannah Lawrence</strong>,
+                ...,
+                <a href="https://people.tamu.edu/~sji/">Shuiwang Ji</a>
+                <br>
+                <em>Under review</em>, 2023. 
+                <br>
+                <p></p>
+                <p>A survey of machine learning for physics.</p>
+              </td>
+            </tr>
+          </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="distill_stop()" onmouseover="distill_start()">
@@ -136,6 +257,8 @@
             </tr>
           </tbody></table>
 
+          <!-- positional encodings -->
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="gulp_stop()" onmouseover="gulp_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -163,7 +286,7 @@
                 <a href="https://scholar.google.com/citations?user=CKYZLxYAAAAJ&hl=en">George Stepaniants</a>,
                 <a href="https://math.mit.edu/~rigollet/">Philippe Rigollet</a>
                 <br>
-                 <em>NeurIPS (Oral Presentation, to appear)</em>, 2022 
+                 <em>NeurIPS (Oral Presentation)</em>, 2022 
                 <br>
                 <p></p>
                 <p>We define a family of distance pseudometrics for comparing learned data representations, directly inspired by transfer learning. In particular, we define a distance between two representations based on how differently (worst-case over all downstream, bounded linear predictive tasks) they perform under ridge regression.</p>
@@ -396,7 +519,13 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/YaleUniversityLogo.jpg"></td>
             <td width="75%" valign="center">
-              Hertz Foundation Summer Workshop Committee, Fall 2021 and Spring 2022
+              Organizer, Boston Symmetry Day, Fall and Spring 2023
+              <br>
+              <br>
+              Teaching Assistant, 6.S966 Symmetry and its Applications to Machine Learning, Spring 2023
+              <br>
+              <br>
+              <a href="https://www.hertzfoundation.org/news/volunteers-drive-community-building-connections-through-the-summer-workshop/">Hertz Foundation Summer Workshop Committee</a>, Fall 2021 and Spring 2022
               <br>
               <br>
               Women in Learning Theory Mentor, Spring 2020
