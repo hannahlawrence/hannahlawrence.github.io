@@ -117,22 +117,58 @@
             </td>
           </tr>
 
-          <!-- # SL2 -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="sl2_stop()" onmouseover="sl2_start()">
+            <tr onmouseout="canon_stop()" onmouseover="canon_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='ssl_image'><img src='images/white_square.jpg'></div>
-                  <img src='images/white_square.jpg'>
+                  <div class="two" id='canon_image'><img src='images/lexsort_after.jpg'></div>
+                  <img src='images/lexsort_before.jpg'>
                 </div>
                 <script type="text/javascript">
-                  function sl2_start() {
-                    document.getElementById('ssl_image').style.opacity = "1";
+                  function canon_start() {
+                    document.getElementById('canon_image').style.opacity = "1";
                   }
-                  function sl2_stop() {
-                    document.getElementById('ssl_image').style.opacity = "0";
+                  function canon_stop() {
+                    document.getElementById('canon_image').style.opacity = "0";
                   }
-                  sl2_stop()
+                  canon_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2402.16077.pdf">
+                  <papertitle>Equivariant Frames and the Impossibility of Continuous Canonicalization</papertitle>
+                </a>
+                <br>
+                <a href="https://nadavdym.github.io/">Nadav Dym<sup>*</sup></a>,
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://jwsiegel2510.github.io/">Jonathan Siegel<sup>*</sup></a>
+                <br>
+                <em>Under review</em>, 2023. 
+                <br>
+                <p></p>
+                <p>We demonstrate that, perhaps surprisingly, there is no continuous canonicalization (or even efficiently implementable frame) for many symmetry groups. We introduce a notion of weighted frames to circumvent this issue.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+
+          
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="poly_stop()" onmouseover="poly_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='poly_image'><img src='images/poly_after.jpg'></div>
+                  <img src='images/poly_before.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function poly_start() {
+                    document.getElementById('poly_image').style.opacity = "1";
+                  }
+                  function poly_stop() {
+                    document.getElementById('poly_image').style.opacity = "0";
+                  }
+                  poly_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
@@ -143,7 +179,7 @@
                 <strong>Hannah Lawrence<sup>*</sup></strong>,
                 <a href="https://harris-mit.github.io/">Mitchell Harris<sup>*</sup></a>
                 <br>
-                <em>Under review</em>, 2023. 
+                ICLR 2024, to appear. 
                 <br>
                 <p></p>
                 <p>We propose machine learning approaches, which are equivariant with respect to the non-compact group of area-preserving transformations SL(2,R), for learning to solve polynomial optimization problems.</p>
@@ -151,12 +187,51 @@
             </tr>
           </tbody></table>
 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="hardness_stop()" onmouseover="hardness_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='hardness_image'><img src='images/hardness.jpg'></div>
+                  <img src='images/hardness.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function hardness_start() {
+                    document.getElementById('hardness_image').style.opacity = "1";
+                  }
+                  function hardness_stop() {
+                    document.getElementById('hardness_image').style.opacity = "0";
+                  }
+                  hardness_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2401.01869.pdf">
+                  <papertitle>On the hardness of learning under symmetries</papertitle>
+                </a>
+                <br>
+                <a href="https://bkiani.github.io/">Bobak T. Kiani<sup>*</sup></a>,
+                <a href="https://scholar.google.com/citations?user=WhFGh74AAAAJ&hl=en">Thien Le<sup>*</sup></a>,
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a>,
+                <a href="http://melanie-weber.com/">Melanie Weber</a>
+                <br>
+                ICLR 2024, to appear.
+                <br>
+                <p></p>
+                <p>We give statistical query lower bounds for learning symmetry-preserving neural networks and other invariant functions.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="ssl_stop()" onmouseover="ssl_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='ssl_image'><img src='images/white_square.jpg'></div>
-                  <img src='images/white_square.jpg'>
+                  <div class="two" id='ssl_image'><img src='images/ssl_after.jpg'></div>
+                  <img src='images/ssl_before.jpg'>
                 </div>
                 <script type="text/javascript">
                   function ssl_start() {
@@ -188,20 +263,20 @@
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="ssl_stop()" onmouseover="ssl_start()">
+            <tr onmouseout="atomistic_stop()" onmouseover="atomistic_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='ssl_image'><img src='images/white_square.jpg'></div>
-                  <img src='images/white_square.jpg'>
+                  <div class="two" id='atomistic_image'><img src='images/atomistic.jpg'></div>
+                  <img src='images/atomistic.jpg'>
                 </div>
                 <script type="text/javascript">
-                  function ssl_start() {
-                    document.getElementById('ssl_image').style.opacity = "1";
+                  function atomistic_start() {
+                    document.getElementById('atomistic_image').style.opacity = "1";
                   }
-                  function ssl_stop() {
-                    document.getElementById('ssl_image').style.opacity = "0";
+                  function atomistic_stop() {
+                    document.getElementById('atomistic_image').style.opacity = "0";
                   }
-                  ssl_stop()
+                  atomistic_stop()
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
@@ -397,7 +472,7 @@
                 <strong>Hannah Lawrence</strong>,
                 <a href="https://kristian-georgiev.github.io/">Kristian Georgiev</a>,
                 <a href="https://www.linkedin.com/in/andrew-dienes-83981914a">Andrew Dienes</a>,
-                <a href="https://scholar.google.com/citations?user=fz1mq4AAAAAJ&hl=en">Bobak T. Kiani<sup>*</sup></a>
+                <a href="https://bkiani.github.io/">Bobak T. Kiani<sup>*</sup></a>
                 <br>
                  <em>Appearing at ICML</em>, 2022 
                 <br>
