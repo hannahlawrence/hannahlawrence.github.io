@@ -26,10 +26,13 @@
               <p>
                 Note: this page is under construction.
               </p> -->
-              <p>I am a PhD student in machine learning at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. I am also a member of the wonderful <a href="https://atomicarchitects.github.io/">Atomic Architects</a>, led by Tess Smidt. Previously, I was a summer research intern at the Open Catalyst Team at Meta FAIR, studying equivariance for chemistry applications.
-                
-              Before graduate school, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of equivariant deep learning and signal processing for <a href="https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy">cryoEM</a>. Broadly, I enjoy developing theoretically principled tools for deep learning (often in scientific or image domains), with a focus on learning with symmetries.
+              <p>I am a PhD student in machine learning at MIT, where I am fortunate to be advised by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. I am also a member of the wonderful <a href="https://atomicarchitects.github.io/">Atomic Architects</a>, led by Tess Smidt. Previously, I was a summer research intern at <a href="https://www.deshawresearch.com/">DE Shaw Research</a>, working on tokenization of small molecules for LLMs, and at the <a href="https://ai.meta.com/research/impact/open-catalyst/">Open Catalyst Team</a> at Meta FAIR, studying equivariant architecture for chemistry applications.
               </p>
+
+              <p>
+              Before graduate school, I was a research analyst at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/">Center for Computational Mathematics</a> of the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York, where I worked on developing algorithms at the interface of equivariant deep learning and signal processing for <a href="https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy">cryoEM</a>. 
+              </p>
+              <p><b>Broadly, I enjoy developing theoretically principled tools for deep learning (often in scientific domains), with a focus on both understanding and imposing structure for neural representations.</b></p>
               <p>
                 I spent summer 2019 at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/">Microsoft Research</a>, where I was lucky to be mentored by <a href=
                 "https://people.cs.umass.edu/~cmusco/">Cameron Musco</a>. I've also spent productive summers at <a href="https://www.reservoir.com/">Reservoir Labs</a> and the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-biology/">Center for Computational Biology</a>. I was an undergrad at Yale in applied math and computer science, where I had the good fortune of being advised by <a href="https://seas.yale.edu/faculty-research/faculty-directory/amin-karbasi">Amin Karbasi</a> and <a href="http://www.cs.yale.edu/homes/spielman/">Dan Spielman</a>.
@@ -63,25 +66,29 @@
                 My primary research interests include symmetry-aware (equivariant) machine learning and scientific applications. <!--  sparse recovery, and scientific imaging/inverse problems, and especially applications in which these paradigms intersect. -->In addition, I enjoy developing theoretically principled tools for deep learning, for applications from vision to interpretability to PDEs. 
                 <br />
                 <br />
-                Here is a non-exhaustive list of a few high-level questions I've been thinking about recently (or at least, the last time I updated this website):
+                Here is a non-exhaustive list of a few high-level questions I've been thinking about recently (or at least, the last time I updated this website, which was on 4/9/25):
 
                 <ul>
+
+                  <li> <i> In the age of LLMs, what is the future of equivariant learning? </i> (Here are <a href="data/NVIDIA_Research_Pres.pdf"> some slides</a> from a recent talk I gave, offering some perspective on this.) </li>
                   
-                  <li> <i> What kinds of approximate symmetries arise in practice, e.g. in scientific applications? How should this structure inform our choice of architecture, and when is approximate symmetry still a powerful enough inductive bias to benefit learning? </i> </li>
+                  <li> <i> How can we probe how a network "thinks" by discovering structure in its hidden representations? </i> </li>
 
-                  <li> <i> What is the role of equivariance, e.g. to permutations, in large language models (LLMs)? To what extent is equivariance learned? To what extent should it be enforced? </i> </li>
+                  <li> <i> What is the role of equivariance, e.g. to permutations, in large language models (LLMs)? To what extent is equivariance learned?  </i> </li>
 
+                  <li> <i> What is the right way to tokenize geometric objects? How does tokenization transcend mere compression? What properties are desirable in a tokenization scheme? </i> </li>
                   
-                  <li> <i> How can we harness equivariance to learn useful representations, especially in applications with complicated symmetries (such as PDEs)? </i> </li>
-
                   <!-- <li> <i> How can we enforce equivariance to non-compact groups, like the special linear group?  </i> </li> -->
 
-                  <li> <i> How can we make canonicalization work, in theory and in practice, as an approach for enforcing symmetries? </i> </li>
+                  <li> <i> How can we make canonicalization work, in theory and in practice, as an approach for enforcing symmetries in black-box models? </i> </li>
                   
 
-                  <li> <i> Does equivariance have a role to play in NLP? In fairness? </i> </li>
+                  <li><i>How much hot chocolate can I consume at a single research institution? </i></li>
 
                   <!--
+                    <li> <i> How can we harness equivariance to learn useful representations, especially in applications with complicated symmetries (such as PDEs)? </i> </li>
+                    <li> <i> What kinds of approximate symmetries arise in practice, e.g. in scientific applications? How should this structure inform our choice of architecture, and when is approximate symmetry still a powerful enough inductive bias to benefit learning? </i> </li>
+                    <li> <i> Does equivariance have a role to play in NLP? In fairness? </i> </li>
                   <li> When might the minimax-optimal mini-batching algorithm for switching-constrained online convex optimization be useful in practical applications, and what real-world factors beyond switching might we care about? </li>
                   <li>How much hot chocolate can I consume at a single research institution? </li> -->
                 </ul>
@@ -118,6 +125,41 @@
           </tr>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="break_stop()" onmouseover="break_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='break_image'><img src='images/symmbreak_after.jpg'></div>
+                  <img src='images/symmbreak_before.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function break_start() {
+                    document.getElementById('break_image').style.opacity = "1";
+                  }
+                  function break_stop() {
+                    document.getElementById('break_image').style.opacity = "0";
+                  }
+                  break_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2503.21985">
+                  <papertitle>Improving Equivariant Networks with Probabilistic Symmetry Breaking</papertitle>
+                </a>
+                <br>
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://vportilheiro.github.io/">Vasco Portilheiro<sup>*</sup></a>,
+                <a href="https://mila.quebec/en/directory/yan-zhang">Yan Zhang</a>,
+                <a href="https://oumarkaba.github.io/">Sékou-Oumar Kaba</a>,
+                <br>
+                <em>ICML</em>, 2024. 
+                <br>
+                <p></p>
+                <p>Equivariant models can't break symmetries - they can only map symmetric inputs (e.g. squares) to symmetric outputs (e.g. objects with the same symmetry as a square). We propose a sample-efficient probabilistic framework for breaking symmetries, e.g. in generative models' latent spaces, by combining equivariant networks with canonicalization-based positional encodings.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="canon_stop()" onmouseover="canon_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -143,7 +185,7 @@
                 <strong>Hannah Lawrence<sup>*</sup></strong>,
                 <a href="https://jwsiegel2510.github.io/">Jonathan Siegel<sup>*</sup></a>
                 <br>
-                <em>Under review</em>, 2023. 
+                <em>ICML</em>, 2024. 
                 <br>
                 <p></p>
                 <p>We demonstrate that, perhaps surprisingly, there is no continuous canonicalization (or even efficiently implementable frame) for many symmetry groups. We introduce a notion of weighted frames to circumvent this issue.</p>
@@ -179,7 +221,7 @@
                 <strong>Hannah Lawrence<sup>*</sup></strong>,
                 <a href="https://harris-mit.github.io/">Mitchell Harris<sup>*</sup></a>
                 <br>
-                ICLR 2024, to appear. 
+                <em>ICLR</em>, 2024.
                 <br>
                 <p></p>
                 <p>We propose machine learning approaches, which are equivariant with respect to the non-compact group of area-preserving transformations SL(2,R), for learning to solve polynomial optimization problems.</p>
@@ -216,7 +258,7 @@
                 <a href="https://people.csail.mit.edu/stefje/">Stefanie Jegelka</a>,
                 <a href="http://melanie-weber.com/">Melanie Weber</a>
                 <br>
-                ICLR 2024, to appear.
+                <em>ICLR</em>, 2024.
                 <br>
                 <p></p>
                 <p>We give statistical query lower bounds for learning symmetry-preserving neural networks and other invariant functions.</p>
@@ -224,6 +266,41 @@
             </tr>
           </tbody></table>
 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="posenc_stop()" onmouseover="posnec_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='posenc_image'><img src='images/posenc_after.jpg'></div>
+                  <img src='images/posenc_before.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function posnec_start() {
+                    document.getElementById('posenc_image').style.opacity = "1";
+                  }
+                  function posenc_stop() {
+                    document.getElementById('posenc_image').style.opacity = "0";
+                  }
+                  posenc_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://openreview.net/pdf?id=18f4nhMJ33">
+                  <papertitle>Positional Encodings as Group Representations: A Unified Framework</papertitle>
+                </a>
+                <br>
+                <a href="https://cptq.github.io/about/">Derek Lim<sup>*</sup></a>,
+                <strong>Hannah Lawrence</strong>,
+                <a href="https://nhuang37.github.io/">Ningyuan (Teresa) Huang</a>,
+                <a href="https://ehthiede.github.io/">Erik H. Thiede</a>
+                <br>
+                <em>ICML TAG-ML Workshop</em>, 2023. 
+                <br>
+                <p></p>
+                <p>We observe that many popular positional encodings (sinusoidal, ROPE, graph PEs, etc) can be interpreted as algebraic group representations, which formalizes some of their desirable properties (invariance to global translation, etc). This also suggests a simple framework for building positional encodings with new invariances, such as the special euclidean group. </p>
+              </td>
+            </tr>
+          </tbody></table>
 
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -602,7 +679,7 @@
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/YaleUniversityLogo.jpg"></td>
             <td width="75%" valign="center">
-              Organizer, Boston Symmetry Day, Fall and Spring 2023
+              Organizer, Boston Symmetry Day, Fall 2023 - Present
               <br>
               <br>
               Teaching Assistant, 6.S966 Symmetry and its Applications to Machine Learning, Spring 2023
