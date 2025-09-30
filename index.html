@@ -130,6 +130,43 @@
           </tr>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="dist_stop()" onmouseover="dist_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dist_image'><img src='images/mol2.png'></div>
+                  <img src='images/mol1.png'>
+                </div>
+                <script type="text/javascript">
+                  function dist_start() {
+                    document.getElementById('dist_image').style.opacity = "1";
+                  }
+                  function dist_stop() {
+                    document.getElementById('dist_image').style.opacity = "0";
+                  }
+                  dist_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://openreview.net/pdf?id=yEvdOXW5iY">
+                  <papertitle>Detecting Symmetry Breaking in Molecule Data Distributions</papertitle>
+                </a>
+                <br>
+                <strong>Hannah Lawrence<sup>*</sup></strong>,
+                <a href="https://ehofgard.github.io/">Elyssa Hofgard<sup>*</sup></a>,
+                <a href="https://vportilheiro.github.io/">Vasco Portilheiro</a>,
+                <a href="https://www.khoury.northeastern.edu/people/yuxuan-chen/">Yuxuan Chen</a>,
+                <a href="https://blondegeek.github.io/">Tess Smidt</a>,
+                <a href="https://www.robinwalters.com/">Robin Walters</a>,
+                <br>
+                <em>ICLR AI for Materials Science Workshop</em>, 2024. 
+                <br>
+                <p></p>
+                <p><i>[Note: extensions of this work are in submission!]</i> We propose a simple classifier test for detecting whether a distribution of point clouds is rotationally aligned, versus isotropically oriented. In essence, we split the dataset into two halves, rotate one half, and then check the test accuracy of a classifier trained to distinguish between them. In applying this test to point cloud datasets (QM9, OC20, MD17), we surprisingly find that they are extremely aligned! This has implications for our understanding of how, and when, equivariant methods (including augmentation and canonicalization) succeed.</p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr onmouseout="break_stop()" onmouseover="break_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
