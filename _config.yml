@@ -1,0 +1,39 @@
+title: Hannah Lawrence
+description: PhD student in machine learning at MIT
+url: https://hannahlawrence.github.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  math_engine: null
+
+# Sass
+sass:
+  style: compressed
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:title/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+
+# Keep existing directories
+include:
+  - images
+  - data

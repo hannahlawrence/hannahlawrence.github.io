@@ -1,0 +1,13 @@
+<figure{% if include.class %} class="{{ include.class }}"{% endif %}>
+  <img
+    src="{{ include.path | relative_url }}"
+    {% if include.alt %}alt="{{ include.alt }}"{% endif %}
+    {% if include.title %}title="{{ include.title }}"{% endif %}
+    {% if include.width %}width="{{ include.width }}"{% else %}width="100%"{% endif %}
+    {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %}
+    loading="lazy"
+  >
+  {% if include.caption %}
+    <figcaption class="caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,121 @@
+// Distill-specific styles
+
+.post.distill {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Distill title area
+d-title {
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.5;
+  }
+}
+
+// Article content
+d-article {
+  font-size: 1.06rem;
+  line-height: 1.7;
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  figure {
+    margin: 2em 0;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // Math blocks
+  .math-block {
+    overflow-x: auto;
+    margin: 1.5em 0;
+  }
+}
+
+// Table of contents
+d-contents {
+  nav {
+    position: sticky;
+    top: 20px;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 2em;
+
+    h3 {
+      margin-top: 0;
+      font-size: 1em;
+    }
+
+    ul {
+      margin: 0.5em 0 0 1em;
+      padding: 0;
+    }
+
+    a {
+      font-size: 0.9em;
+    }
+  }
+}
+
+// Byline (author info)
+d-byline {
+  font-size: 0.9em;
+  color: #666;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1em 0;
+  margin: 1em 0 2em;
+}
+
+// Appendix
+d-appendix {
+  font-size: 0.9em;
+  color: #666;
+  border-top: 1px solid #eee;
+  margin-top: 3em;
+  padding-top: 2em;
+}
+
+// Footnotes
+d-footnote-list {
+  h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+// Citations
+d-citation-list {
+  h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+}
