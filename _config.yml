@@ -33,6 +33,10 @@ exclude:
   - vendor
   - node_modules
 
+# Keep index.html as-is (no Jekyll processing needed)
+keep_files:
+  - index.html
+
 # Keep existing directories
 include:
   - images
